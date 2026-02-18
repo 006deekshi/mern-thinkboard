@@ -1,0 +1,267 @@
+body{
+    background-color: rgb(58, 57, 57);
+    margin: 0;
+}
+
+.nav-bar{
+    height: 70px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.navbar-content{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #0fe26a; /* glowing green */
+  margin: 0; 
+
+}
+
+.button .note-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  padding: 8px 16px;
+  background-color: #0fe26a;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.button .note-btn:hover {
+  background-color: #39ff14; /* brighter neon green */
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
+/* Icon sizing */
+.plus-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.rate-limit {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate-card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  color: #ccc;
+  box-shadow: 0 0 10px rgba(15, 226, 106, 0.2);
+  width: 300px;
+}
+
+.rate-icon {
+  color: #0fe26a;
+  margin-bottom: 10px;
+}
+
+.note-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  color: #ccc;
+  box-shadow: 0 0 10px rgba(15, 226, 106, 0.15);
+  text-decoration: none;
+}
+
+.note-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-title {
+  color: #0fe26a;
+  font-size: 1.1rem;
+}
+
+.note-content {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  color: #0fe26a;
+  transition: 0.2s;
+}
+
+.icon:hover {
+  color: #39ff14;
+}
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 100px;
+}
+
+.create-page {
+  padding: 100px 500px;
+  color: #ccc;
+}
+
+/* Back button */
+.back-btn {
+  text-decoration: none;
+  color: #0fe26a;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: inline-block;
+  background-color: #616060;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.back-btn:hover {
+  color: #39ff14;
+  background-color: #3c3b3b;
+}
+
+/* Container */
+.create-container {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(15, 226, 106, 0.2);
+}
+
+/* Heading */
+.create-heading {
+  color: #0fe26a;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs */
+.input-field,
+.textarea-field {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #ccc;
+  outline: none;
+}
+
+.textarea-field {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Focus effect */
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #0fe26a;
+}
+
+/* Button */
+.submit-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0fe26a;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loading-btn {
+  background-color: #444;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+
+.submit-btn:hover {
+  background-color: #39ff14;
+}
+
+.detail-page {
+  padding: 100px 500px;
+  color: #ccc;
+}
+
+/* Top row alignment */
+.detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+
+.back-btn:hover {
+  color: #39ff14;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #222;
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 35px;
+}
+
+.delete-btn:hover {
+  background-color: #ff4d4d;
+  color: black;
+}
+
+/* Container */
+.detail-container {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(15, 226, 106, 0.2);
+}
+
+/* Heading */
+.detail-heading {
+  color: #0fe26a;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.detail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
